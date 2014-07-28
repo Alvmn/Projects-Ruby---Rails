@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   get "/" => "site#home"
   get "/contact" => "site#email"
-  get "/call" => "site#call"
 # / aka URL
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
