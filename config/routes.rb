@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get "/" => "site#home"
   get "/contact" => "site#email"
   get "/projects" => "projects#index"
+  get "/projects/:id" => "projects#show" #Aquí está llamando a la acción
+  #show, es decir al def show, no al index2.html.erb
 # / aka URL
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
