@@ -1,0 +1,18 @@
+<html>
+<body>
+<ul>
+
+<% @projects.each do |project| %>
+<li> <%= project.name %>
+	<% if project.description != nil %>
+	-- <%= project.description %>
+	<% else %>
+	-- Éstas no son las descripciones que buscáis.
+	<% end %>
+</li>
+<% end %>
+
+
+</ul>
+</body>
+</html>
